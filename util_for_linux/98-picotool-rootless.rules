@@ -1,0 +1,7 @@
+# Arquivo: /etc/udev/rules.d/98-rootless-picotool.rules
+# Doc: Faz raspberry pi pico acessível sem sudo.
+
+SUBSYSTEM!="usb_device", ACTION!="add", GOTO="rpi2_end"
+ATTR{idVendor}=="2e8a", ATTRS{idProduct}=="0003", MODE="660", GROUP="plugdev"
+
+LABEL="rpi2_end"
