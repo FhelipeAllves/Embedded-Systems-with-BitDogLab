@@ -46,7 +46,7 @@ restart:
     char *text[] = {
         "  Teste inicial ",
         "  do display   ",
-        "  Felps S2"};
+        "  Felps"};
 
     int y = 0;
     for (uint i = 0; i < count_of(text); i++)
